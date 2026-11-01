@@ -1,0 +1,282 @@
+{
+  "schema_version": "0.1",
+  "project": {
+    "id": "mogadishu_1993_pilot",
+    "title": "摩加迪沙，三种记录",
+    "topic": "摩加迪沙之战（1993）",
+    "format": "interactive_documentary",
+    "duration_minutes": 12,
+    "audience": "普通历史兴趣用户",
+    "assumptions": [
+      "玩家是当代档案编辑，不扮演真实历史人物。",
+      "选择改变叙事顺序与结尾强调，不改变历史结果。",
+      "不创作冒充史料的对白或参战者内心独白。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "联合国秘书长关于索马里的报告 S/26738",
+      "url": "https://documents.un.org/doc/undoc/gen/n93/631/87/pdf/n9363187.pdf",
+      "type": "un_report",
+      "perspective": "联合国秘书长报告"
+    },
+    {
+      "id": "S02",
+      "title": "United States Forces, Somalia: After Action Report and Historical Overview",
+      "url": "https://api.army.mil/e2/c/downloads/314322.pdf",
+      "type": "official_military_report",
+      "perspective": "美国陆军官方战后报告"
+    },
+    {
+      "id": "S03",
+      "title": "Night of a Thousand Casualties",
+      "url": "https://www.washingtonpost.com/archive/politics/1994/01/31/night-of-a-thousand-casualties/1f0c97b1-1605-46e5-9466-ba3599120c25/",
+      "type": "reported_interviews",
+      "perspective": "基于美方与索马里参与者采访的新闻报道"
+    },
+    {
+      "id": "S04",
+      "title": "Somalia, 1992–1993 — Office of the Historian",
+      "url": "https://history.state.gov/milestones/1993-2000/somalia",
+      "type": "government_historical_overview",
+      "perspective": "美国国务院外交史"
+    },
+    {
+      "id": "S05",
+      "title": "United Nations Operation in Somalia II (UNOSOM II) — Background",
+      "url": "https://peacekeeping.un.org/sites/default/files/past/unosom2backgr2.html",
+      "type": "un_mission_background",
+      "perspective": "联合国维和行动背景"
+    },
+    {
+      "id": "S06",
+      "title": "Somalia — Human Rights Watch (1995)",
+      "url": "https://www.hrw.org/reports/1995/somalia/",
+      "type": "human_rights_report",
+      "perspective": "人权与问责背景；涉及多个 1993 年事件"
+    },
+    {
+      "id": "S07",
+      "title": "Surviving Black Hawk Down Explores the Continued Devastation of the Battle of Mogadishu",
+      "url": "https://time.com/7216261/surviving-black-hawk-down-true-story/",
+      "type": "reported_survivor_testimony",
+      "perspective": "报道转述纪录片中的索马里平民个人回忆；非伤亡统计"
+    }
+  ],
+  "facts": [
+    {
+      "id": "F01",
+      "claim": "战斗发生于 1993 年 10 月 3–4 日；行动目标是抓捕艾迪德的重要助手。",
+      "status": "supported",
+      "source_ids": ["S01", "S02"]
+    },
+    {
+      "id": "F02",
+      "claim": "联合国报告称行动抓获 24 名嫌疑人，其中包括两名艾迪德的重要助手。",
+      "status": "supported_with_wording_caveat",
+      "source_ids": ["S01", "S02"],
+      "notes": "统一使用‘被拘押者’，不暗示所有人均被定罪。"
+    },
+    {
+      "id": "F03",
+      "claim": "两架美军黑鹰直升机在战斗中被击落；一名飞行员被俘，后于 1993 年 10 月 14 日获释。",
+      "status": "supported",
+      "source_ids": ["S01"]
+    },
+    {
+      "id": "F04",
+      "claim": "联合国报告记录 18 名美军死亡、75 人受伤；《华盛顿邮报》报道记录 18 人死亡、84 人受伤。",
+      "status": "contested_count",
+      "source_ids": ["S01", "S03"],
+      "notes": "不合并或取平均；待核查统计口径和时间范围。"
+    },
+    {
+      "id": "F05",
+      "claim": "公开来源没有提供可确认的统一索马里伤亡总数。",
+      "status": "uncertain_total",
+      "source_ids": ["S01", "S03"],
+      "notes": "新闻报道中的 312 人死亡、814 人受伤是索马里方面领导人的估计，不作为最终统计。"
+    },
+    {
+      "id": "F06",
+      "claim": "联合国在索马里的任务包括人道援助、恢复法律秩序与民族和解；该战斗发生在更长的国际介入背景中。",
+      "status": "supported",
+      "source_ids": ["S01", "S04", "S05"]
+    },
+    {
+      "id": "F07",
+      "claim": "战斗后数日，美国宣布计划在 1994 年 3 月前撤出部队；美军于 1994 年 3 月离开索马里。",
+      "status": "supported",
+      "source_ids": ["S04"]
+    },
+    {
+      "id": "F08",
+      "claim": "后来的纪录片采访收录了索马里平民对战斗期间避难与受伤经历的回忆。",
+      "status": "individual_testimony",
+      "source_ids": ["S07"],
+      "notes": "单独标注个人回忆；不得据此推算总体伤亡，不重演个人创伤。"
+    },
+    {
+      "id": "F09",
+      "claim": "美国陆军官方战后报告记载，救援纵队于 1993 年 10 月 4 日 01:55 抵达第一处坠机地点。",
+      "status": "supported_with_source_attribution",
+      "source_ids": ["S02"],
+      "notes": "明确标为美国陆军官方战后报告所记时间。"
+    },
+    {
+      "id": "F10",
+      "claim": "美国陆军官方战后报告称，第一架黑鹰在距目标约三个街区处坠落。",
+      "status": "supported_with_source_attribution",
+      "source_ids": ["S02"]
+    },
+    {
+      "id": "F11",
+      "claim": "美国陆军官方战后报告称，第二处坠机地点位于第一处以南不到一英里。",
+      "status": "supported_with_source_attribution",
+      "source_ids": ["S02"]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "SC01",
+      "type": "opening",
+      "title": "档案桌",
+      "duration_seconds": 60,
+      "narration": "摩加迪沙之战留下了多种记录。它们可以互相补充，也会在口径和关注点上不同。先从哪一份记录开始，由你决定。",
+      "fact_refs": ["F01"],
+      "media": ["map_schematic", "source_cards"],
+      "choices": [
+        { "id": "C01A", "label": "任务与救援", "effects": { "entry_lens": "operation" }, "next": "SC02A" },
+        { "id": "C01B", "label": "城市中的代价", "effects": { "entry_lens": "city" }, "next": "SC02B" },
+        { "id": "C01C", "label": "更长的介入背景", "effects": { "entry_lens": "aftermath" }, "next": "SC02C" }
+      ]
+    },
+    {
+      "id": "SC02A",
+      "type": "chapter",
+      "title": "任务与救援",
+      "duration_seconds": 180,
+      "narration": "10 月 3 日约 15:30，行动开始，目标是抓捕艾迪德的重要助手。美国陆军报告记载拘押 24 人；联合国报告称抓获 24 名嫌疑人。两架黑鹰直升机被击落后，抓捕行动转成救援。接下来，你可以选择先读哪处现场的记录。",
+      "fact_refs": ["F01", "F02", "F03"],
+      "source_refs": ["S01", "S02"],
+      "media": ["map_schematic", "timeline_cards"],
+      "choices": [
+        { "id": "C02A1", "label": "先读第一处现场：救援如何抵达", "effects": { "record_focus": "first_crash_site" }, "next": "SC02A1" },
+        { "id": "C02A2", "label": "先读第二处现场：增援如何调动", "effects": { "record_focus": "second_crash_site" }, "next": "SC02A2" }
+      ]
+    },
+    {
+      "id": "SC02A1",
+      "type": "chapter",
+      "title": "第一处现场：救援如何抵达",
+      "duration_seconds": 90,
+      "narration": "美国陆军战后报告称，第一架黑鹰在距目标约三个街区处坠落。此路径先阅读第一处现场的救援记录。",
+      "fact_refs": ["F10"],
+      "source_refs": ["S02"],
+      "media": ["map_schematic", "timeline_cards"],
+      "choices": [{ "id": "C02A1C", "label": "进入共同时间线", "next": "SC02A3" }]
+    },
+    {
+      "id": "SC02A2",
+      "type": "chapter",
+      "title": "第二处现场：增援如何调动",
+      "duration_seconds": 90,
+      "narration": "美国陆军战后报告称，第二处坠机地点在第一处以南不到一英里。此路径先阅读两处现场并行时的增援与救援调动记录。",
+      "fact_refs": ["F03", "F11"],
+      "source_refs": ["S01", "S02"],
+      "media": ["map_schematic", "timeline_cards"],
+      "choices": [{ "id": "C02A2C", "label": "进入共同时间线", "next": "SC02A3" }]
+    },
+    {
+      "id": "SC02A3",
+      "type": "convergence",
+      "title": "01:55：共同时间线",
+      "duration_seconds": 60,
+      "narration": "两条档案路径在此汇合。美国陆军官方战后报告记载，救援纵队于 10 月 4 日 01:55 抵达第一处坠机地点。选择改变信息次序，不改变历史结果。",
+      "fact_refs": ["F09"],
+      "source_refs": ["S02"],
+      "media": ["map_schematic", "timeline_cards"],
+      "choices": [{ "id": "C02A3C", "label": "继续对照其他记录", "next": "SC03" }]
+    },
+    {
+      "id": "SC02B",
+      "type": "chapter",
+      "title": "城市中的代价",
+      "duration_seconds": 180,
+      "narration": "现存公开记录无法给出一致的索马里伤亡总数。不同材料记录了不同估计，也留下了哪些人、哪些经历没有进入正式统计的问题。",
+      "fact_refs": ["F05", "F06", "F08"],
+      "source_refs": ["S01", "S03", "S06", "S07"],
+      "media": ["source_cards", "uncertainty_overlay"],
+      "notes": "不得把此前 1993 年 6–7 月其他事件的伤亡数字移植到 10 月战斗。",
+      "choices": [{ "id": "C02B1", "label": "继续对照其他记录", "next": "SC03" }]
+    },
+    {
+      "id": "SC02C",
+      "type": "chapter",
+      "title": "更长的介入背景",
+      "duration_seconds": 180,
+      "narration": "这场战斗发生在更长的救援与维和任务中。联合国任务目标包括人道援助、恢复法律秩序和民族和解。美国后来宣布在 1994 年 3 月前撤出部队。",
+      "fact_refs": ["F06", "F07"],
+      "source_refs": ["S01", "S04", "S05"],
+      "media": ["timeline_cards", "map_schematic"],
+      "choices": [{ "id": "C02C1", "label": "继续对照其他记录", "next": "SC03" }]
+    },
+    {
+      "id": "SC03",
+      "type": "source_comparison",
+      "title": "数字如何成为记录",
+      "duration_seconds": 180,
+      "narration": "联合国报告记录 18 名美军死亡、75 人受伤；《华盛顿邮报》后续报道记录 18 人死亡、84 人受伤。关于索马里伤亡，资料给出了不同估计。我们保留来源与不确定性，不把它们拼成一个看似精确的答案。",
+      "fact_refs": ["F04", "F05"],
+      "source_refs": ["S01", "S03"],
+      "media": ["side_by_side_source_cards"],
+      "choices": [
+        { "id": "C03A", "label": "片尾强调任务与救援", "effects": { "ending_lens": "operation" }, "next": "SC04A" },
+        { "id": "C03B", "label": "片尾强调城市与平民", "effects": { "ending_lens": "city" }, "next": "SC04B" },
+        { "id": "C03C", "label": "片尾强调政策后果", "effects": { "ending_lens": "aftermath" }, "next": "SC04C" }
+      ]
+    },
+    {
+      "id": "SC04A",
+      "type": "ending",
+      "title": "任务与救援",
+      "duration_seconds": 60,
+      "narration": "片尾首先呈现任务如何转成救援，以及记录中可以确认的伤亡和行动结果。",
+      "fact_refs": ["F01", "F02", "F03", "F04"],
+      "source_refs": ["S01", "S02", "S03"],
+      "shared_coda": "历史结果不因玩家选择改变；城市伤亡估计仍有不确定性，美国撤军时间线见来源卡。",
+      "ending": true
+    },
+    {
+      "id": "SC04B",
+      "type": "ending",
+      "title": "城市与平民",
+      "duration_seconds": 60,
+      "narration": "片尾首先呈现索马里伤亡记录的缺口，以及为什么不能把估计数字写成确定总数。",
+      "fact_refs": ["F04", "F05", "F06"],
+      "source_refs": ["S01", "S03", "S06"],
+      "shared_coda": "历史结果不因玩家选择改变；任务与救援时间线、美国撤军时间线见来源卡。",
+      "ending": true
+    },
+    {
+      "id": "SC04C",
+      "type": "ending",
+      "title": "政策后果",
+      "duration_seconds": 60,
+      "narration": "片尾首先呈现战斗发生的国际介入背景，以及美国之后宣布撤军的时间线。",
+      "fact_refs": ["F06", "F07"],
+      "source_refs": ["S01", "S04", "S05"],
+      "shared_coda": "历史结果不因玩家选择改变；伤亡数字存在来源差异，需与相关来源卡一并阅读。",
+      "ending": true
+    }
+  ],
+  "validation_rules": [
+    "所有 fact_refs 和 source_refs 必须指向已定义 ID。",
+    "所有节点必须可从 SC01 到达；所有 ending 节点必须可达。",
+    "所有分支必须保留同一历史结果，不生成架空战果。",
+    "F04 必须保留 75/84 人受伤的来源差异，不自动合并。",
+    "F05 不得呈现为已确认的索马里伤亡总数。",
+    "SC02A1 和 SC02A2 两条现场记录分支必须在 SC02A3 汇合。"
+  ]
+}

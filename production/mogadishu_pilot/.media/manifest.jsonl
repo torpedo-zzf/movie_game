@@ -1,0 +1,7 @@
+{"id":"voice_001","type":"voice","path":"assets/voice/scene-01.wav","source":"generated","description":"一九九三年十月三日，摩加迪沙当地约十五时三十分，行动开始。","duration":8.1,"provenance":{"provider":"kokoro","prompt":"一九九三年十月三日，摩加迪沙当地约十五时三十分，行动开始。"}}
+{"id":"voice_002","type":"voice","path":"assets/voice/scene-02.wav","source":"generated","description":"目标是抓捕两名重要助手。美国陆军记载二十四人被拘押。","duration":7,"provenance":{"provider":"kokoro","prompt":"目标是抓捕两名重要助手。美国陆军记载二十四人被拘押。"}}
+{"id":"voice_003","type":"voice","path":"assets/voice/scene-03.wav","source":"generated","description":"第一架黑鹰在目标约三个街区外坠落。行动转为救援。","duration":6.2,"provenance":{"provider":"kokoro","prompt":"第一架黑鹰在目标约三个街区外坠落。行动转为救援。"}}
+{"id":"voice_004","type":"voice","path":"assets/voice/scene-04.wav","source":"generated","description":"第二处现场在南面，不到一英里。","duration":3.6,"provenance":{"provider":"kokoro","prompt":"第二处现场在南面，不到一英里。"}}
+{"id":"voice_005","type":"voice","path":"assets/voice/scene-05.wav","source":"generated","description":"十月四日凌晨一点五十五分，救援纵队抵达第一处坠机点。","duration":7,"provenance":{"provider":"kokoro","prompt":"十月四日凌晨一点五十五分，救援纵队抵达第一处坠机点。"}}
+{"id":"voice_006","type":"voice","path":"assets/voice/scene-06.wav","source":"generated","description":"美军死亡十八人。联合国记录七十五人受伤，《华盛顿邮报》记录八十四人。","duration":8.3,"provenance":{"provider":"kokoro","prompt":"美军死亡十八人。联合国记录七十五人受伤，《华盛顿邮报》记录八十四人。"}}
+{"id":"bgm_001","type":"bgm","path":"assets/bgm/track.wav","source":"generated","description":"track.wav","provenance":{"provider":"musicgen"}}

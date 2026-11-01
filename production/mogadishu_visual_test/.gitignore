@@ -1,0 +1,5 @@
+.venv-audio/
+.venv-music/
+node_modules/
+.env
+.hyperframes/artifacts/

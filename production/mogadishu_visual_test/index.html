@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>摩加迪沙｜风格验证镜头</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root { --ivory:#efe6d2; --signal:#e8905a; --muted:#a3a59e; --matte:#050606; }
+      * { box-sizing:border-box; }
+      html,body { margin:0;width:1920px;height:1080px;overflow:hidden;background:#050606;color:var(--ivory);font-family:"Noto Sans JP",Arial,sans-serif; }
+      #root { position:relative;width:1920px;height:1080px;overflow:hidden;background:#050606; }
+      #world-window { position:absolute;left:0;top:132px;width:1920px;height:816px;overflow:hidden;background:#1a1712; }
+      #world { display:block;width:1920px;height:816px; }
+      .matte { position:absolute;left:0;width:1920px;height:132px;background:var(--matte);z-index:20; }
+      #matte-top { top:0; } #matte-bottom { bottom:0; }
+      #meta { position:absolute;left:112px;right:112px;top:52px;z-index:25;display:flex;justify-content:space-between;color:#8d8f89;font-size:19px;letter-spacing:.16em;line-height:1; }
+      #meta strong { color:#d9cfb9;font-weight:600; }
+      #labels { position:absolute;inset:0;pointer-events:none;z-index:10; }
+      .tag { position:absolute;left:0;top:0;opacity:0;white-space:nowrap; }
+      .tag-inner { position:absolute;left:0;bottom:0;transform:translate(-50%,-14px);padding:8px 14px 9px;background:rgba(10,10,9,.72);border-left:3px solid var(--signal);color:var(--ivory);font-size:24px;letter-spacing:.04em;line-height:1.15; }
+      .tag-inner small { display:block;color:#cfc4ab;font-size:20px;letter-spacing:.08em;margin-top:3px; }
+      #title { position:absolute;left:82px;top:146px;z-index:12;opacity:0;padding:18px 46px 20px 30px;background:linear-gradient(90deg,rgba(8,8,7,.62),rgba(8,8,7,.38) 70%,rgba(8,8,7,0));text-shadow:0 2px 18px rgba(0,0,0,.55); }
+      #title-main { font-size:30px;letter-spacing:.32em;color:#f2e9d6;font-weight:600; }
+      #title-sub { margin-top:8px;font-size:24px;letter-spacing:.18em;color:#e2d6bc; }
+      #caption { position:absolute;left:112px;bottom:30px;z-index:25;opacity:0; }
+      #caption-main { font-size:34px;color:var(--ivory);font-weight:600;letter-spacing:.02em; }
+      #caption-sub { margin-top:6px;font-size:22px;color:#a9a79d;letter-spacing:.06em; }
+      #note { position:absolute;right:112px;bottom:38px;z-index:25;color:#7f817b;font-size:18px;letter-spacing:.12em;opacity:0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="world-window" data-layout-allow-overflow>
+        <canvas id="world" width="1920" height="816"></canvas>
+        <div id="labels">
+          <div class="tag" id="label-target"><div class="tag-inner">目标区<small>奥林匹克酒店附近</small></div></div>
+          <div class="tag" id="label-convoy"><div class="tag-inner">地面车队<small>示意路线</small></div></div>
+        </div>
+      </div>
+      <div class="matte" id="matte-top"></div>
+      <div class="matte" id="matte-bottom"></div>
+      <div id="meta"><span><strong>摩加迪沙</strong> · 1993.10.03</span><span>风格验证镜头 · STYLE TEST</span></div>
+      <div id="title"><div id="title-main">摩加迪沙</div><div id="title-sub">1993 年 10 月 3 日 · 约 15:40</div></div>
+      <div id="caption"><div id="caption-main">地面车队驶向目标区</div><div id="caption-sub">示意场景 · 街区、路线与建筑均非实测比例</div></div>
+      <div id="note">非比例示意</div>
+
+      <audio id="voice-convoy" src="assets/voice/convoy-line.wav" data-start="3.6" data-duration="7.089" data-track-index="1" data-audio-group="voiceover" data-volume="1"></audio>
+      <audio id="sfx-bed" src="assets/sfx/ambience.wav" data-start="0" data-duration="12" data-track-index="2" data-volume="0.55"></audio>
+      <audio id="music-bed" src="assets/bgm/track.wav" data-start="0" data-duration="12" data-track-index="3" data-volume="0.10"></audio>
+
+      <script>
+        window.__hf = window.__hf || {};
+        window.__hf.buildReady = window.__hf.buildReady || {};
+        window.__hf.buildReady.city = new Promise((resolve) => { window.__cityReady = resolve; });
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#title", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.35);
+        tl.to("#title", { opacity: 0, duration: 0.3, ease: "power1.in" }, 2.8);
+        tl.fromTo("#caption", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 3.5);
+        tl.fromTo("#note", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 9.8);
+        tl.to("#caption", { opacity: 0, duration: 0.35, ease: "power2.in" }, 11.55);
+        tl.to({}, { duration: 12 }, 0);
+        window.__timelines["main"] = tl;
+      </script>
+      <script type="module" src="city.js"></script>
+    </div>
+  </body>
+</html>
