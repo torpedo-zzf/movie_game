@@ -1,0 +1,1219 @@
+{
+  "schema_version": "0.3",
+  "project": {
+    "id": "india_pakistan_air_war_2025_pilot",
+    "title": "五十二分钟",
+    "topic": "2025 年 5 月印巴空战",
+    "format": "dual_perspective_reconstruction",
+    "duration_minutes": 14,
+    "audience": "普通历史与军事兴趣用户",
+    "assumptions": [
+      "玩家在两名合成角色飞行员之间切换：巴方 J-10C 飞行员法拉兹（利爪 2）、印方阵风飞行员罗汉（游隼 3）。人物、家人、僚机全部虚构，不对应真实个人。",
+      "全片为标注'重建演示'的重建；所有对白为创作对白。",
+      "合成角色不对任何具体击落负责：法拉兹的发射结果始终未确认，罗汉僚机的失联不对应任何真实坠机点。",
+      "家人线不虚构伤亡，只经电话和消息呈现。",
+      "真实官员只以转述并注明出处的声明卡出现，不为其编写台词。",
+      "选择决定跟随哪个视角，不改变历史结果。"
+    ]
+  },
+  "characters": [
+    {
+      "id": "faraz",
+      "label": "法拉兹·马利克：巴基斯坦空军少校，J-10C 飞行员，呼号利爪 2",
+      "type": "composite_reconstruction",
+      "languages": [
+        "ur",
+        "en"
+      ],
+      "bio": "32 岁，白沙瓦人，父亲是空军地勤技师；驻明哈斯基地。随身带父亲留下的扳手形钥匙扣。"
+    },
+    {
+      "id": "rohan",
+      "label": "罗汉·巴蒂亚：印度空军少校，阵风飞行员，呼号游隼 3",
+      "type": "composite_reconstruction",
+      "languages": [
+        "hi",
+        "en"
+      ],
+      "bio": "34 岁，斋浦尔人，家里第一个参军的人。随身带母亲给的一包糖，从不吃。"
+    },
+    {
+      "id": "sana",
+      "label": "萨娜：法拉兹的妹妹，穆扎法拉巴德中学教师",
+      "type": "fictional_minor",
+      "notes": "只以电话和语音出现；平安。"
+    },
+    {
+      "id": "rohan_mother",
+      "label": "罗汉的母亲：退休小学教师，住在查谟",
+      "type": "fictional_minor",
+      "notes": "只以电话和短信出现；平安。"
+    },
+    {
+      "id": "neel",
+      "label": "尼尔·塔帕：印度空军上尉，罗汉的僚机，呼号游隼 4",
+      "type": "fictional_minor",
+      "notes": "失联后弹射受伤，在结局中出现；不对应任何真实坠机点或真实飞行员。"
+    },
+    {
+      "id": "controller",
+      "label": "引导员（巴方，仅无线电声音）",
+      "type": "fictional_minor",
+      "notes": "位置不交代。"
+    },
+    {
+      "id": "briefing_officer",
+      "label": "简报官（印方）",
+      "type": "fictional_minor"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Indian survivors of Kashmir attack say gunmen asked if they were Hindus and opened fire",
+      "url": "https://apnews.com/article/kashmir-attack-india-pakistan-victims-a5492962cd86174262cb73b85c04c51a",
+      "type": "news",
+      "perspective": "AP"
+    },
+    {
+      "id": "S02",
+      "title": "Pakistan claims Pahalgam attack 'false flag operation'",
+      "url": "https://www.aljazeera.com/news/liveblog/2025/4/24/kashmir-attack-live-india-summons-pakistani-envoy-hunts-pahalgam-gunmen",
+      "type": "news",
+      "perspective": "Al Jazeera"
+    },
+    {
+      "id": "S03",
+      "title": "A tourist massacre in Kashmir is escalating tensions between India and Pakistan",
+      "url": "https://edition.cnn.com/2025/04/24/india/pahalgam-india-pakistan-attack-explainer-intl-hnk",
+      "type": "news",
+      "perspective": "CNN"
+    },
+    {
+      "id": "S04",
+      "title": "'Act of war': Pakistan closes airspace to Indian airlines, suspends all trade",
+      "url": "https://www.hindustantimes.com/india-news/act-of-war-pakistan-closes-airspace-to-indian-airlines-suspends-all-trade-101745495389616.html",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S05",
+      "title": "Transcript of Special Briefing on OPERATION SINDOOR (May 07, 2025)",
+      "url": "https://www.mea.gov.in/media-briefings.htm?dtl/39474/Transcript_of_Special_Briefing_on_OPERATION_SINDOOR_May_07_2025",
+      "type": "government_statement",
+      "perspective": "印度外交部"
+    },
+    {
+      "id": "S06",
+      "title": "India launches attack on 9 sites in Pakistan and Pakistan-occupied Jammu and Kashmir",
+      "url": "https://www.reuters.com/world/india/india-launches-attack-9-sites-pakistan-pakistan-occupied-jammu-kashmir-2025-05-06/",
+      "type": "news",
+      "perspective": "Reuters"
+    },
+    {
+      "id": "S07",
+      "title": "India–Pakistan drone and missile conflict: differing and disputed narratives",
+      "url": "https://www.iiss.org/online-analysis/online-analysis/2025/05/indiapakistan-drone-and-missile-conflict-differing-and-disputed-narratives/",
+      "type": "think_tank_analysis",
+      "perspective": "IISS"
+    },
+    {
+      "id": "S08",
+      "title": "Rafale jets hit Pak terror camps with Scalp missiles, Hammer bombs: Sources",
+      "url": "https://www.indiatoday.in/india/story/rafale-jets-pak-terror-camps-operation-sindoor-pahalgam-attack-retaliation-2720674-2025-05-07",
+      "type": "news_anonymous_sources",
+      "perspective": "印度媒体援引消息人士"
+    },
+    {
+      "id": "S09",
+      "title": "Artillery's firepower reverberates during Operation Sindoor",
+      "url": "https://www.thehindu.com/news/national/artillerys-firepower-reverberates-during-operation-sindoor/article69615205.ece",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S10",
+      "title": "AirForces Monthly: Understanding the Rafale kills / A close call",
+      "url": "https://www.key.aero/article/full-article-understanding-rafale-kills",
+      "type": "defence_magazine_analysis",
+      "perspective": "英国军事航空杂志；部分为付费内容",
+      "needs_full_read": true
+    },
+    {
+      "id": "S11",
+      "title": "China helped Pakistan shoot down Indian planes, report says",
+      "url": "https://www.yahoo.com/news/china-helped-pakistan-shoot-down-142036091.html",
+      "type": "news",
+      "perspective": "The Daily Telegraph"
+    },
+    {
+      "id": "S12",
+      "title": "How Pakistan shot down India's cutting-edge fighter using Chinese gear",
+      "url": "https://www.reuters.com/business/aerospace-defense/how-pakistan-shot-down-indias-cutting-edge-fighter-using-chinese-gear-2025-08-02/",
+      "type": "investigative_news",
+      "perspective": "Reuters",
+      "needs_full_read": true
+    },
+    {
+      "id": "S13",
+      "title": "Exclusive: Pakistan's Chinese-made jet brought down two Indian fighter aircraft, US officials say",
+      "url": "https://www.reuters.com/world/pakistans-chinese-made-jet-brought-down-two-indian-fighter-aircraft-us-officials-2025-05-08/",
+      "type": "news_anonymous_officials",
+      "perspective": "Reuters 援引匿名美国官员"
+    },
+    {
+      "id": "S14",
+      "title": "Air force credits Cobras with 'six IAF kills'",
+      "url": "https://www.dawn.com/news/1915722/",
+      "type": "news",
+      "perspective": "巴基斯坦媒体转述巴方空军"
+    },
+    {
+      "id": "S15",
+      "title": "At least two Indian jets appear to have crashed during Pakistan strikes, visuals show",
+      "url": "https://www.washingtonpost.com/world/2025/05/09/fighter-jets-india-pakistan-attack/",
+      "type": "visual_investigation",
+      "perspective": "The Washington Post"
+    },
+    {
+      "id": "S16",
+      "title": "Kin of Dalit man who died following aircraft crash in Bathinda seek govt compensation",
+      "url": "https://indianexpress.com/article/cities/chandigarh/kin-dalit-man-died-aircraft-crash-bathinda-seek-govt-compensation-10144682/",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S17",
+      "title": "The Indian Aircraft Pakistan Says It Shot Down",
+      "url": "https://www.nytimes.com/2025/05/07/world/asia/india-pakistan-downed-aircraft.html",
+      "type": "news",
+      "perspective": "The New York Times"
+    },
+    {
+      "id": "S18",
+      "title": "Pakistan shot down 6 Indian jets, including 4 French-made Rafale during conflict: Premier Sharif",
+      "url": "https://www.aa.com.tr/en/asia-pacific/pakistan-shot-down-6-indian-jets-including-4-french-made-rafale-during-conflict-premier-sharif/3582409",
+      "type": "news_government_claim",
+      "perspective": "Anadolu 转述巴方总理"
+    },
+    {
+      "id": "S19",
+      "title": "Indian air force says losses are part of combat but all pilots back home",
+      "url": "https://www.reuters.com/world/asia-pacific/indian-air-force-says-losses-are-part-combat-all-pilots-back-home-2025-05-11/",
+      "type": "news_government_claim",
+      "perspective": "Reuters 转述印度空军"
+    },
+    {
+      "id": "S20",
+      "title": "India Confirms It Lost Fighter Jets in Recent Pakistan Conflict",
+      "url": "https://www.bloomberg.com/news/articles/2025-05-31/india-confirms-it-lost-fighter-jets-in-recent-pakistan-conflict",
+      "type": "news_government_claim",
+      "perspective": "Bloomberg 转述印度国防参谋长"
+    },
+    {
+      "id": "S21",
+      "title": "French intelligence claims China trying to foil global sale of Rafale jets",
+      "url": "https://www.aljazeera.com/news/2025/7/6/french-intelligence-claims-china-trying-to-foil-global-sale-of-rafale-jets",
+      "type": "news",
+      "perspective": "Al Jazeera 转述法国空天军参谋长"
+    },
+    {
+      "id": "S22",
+      "title": "IAF's S-400 Sudarshan Chakra: Missile shield that foiled Pak's escalatory bid",
+      "url": "https://www.indiatoday.in/science/story/operation-sindoor-iafs-s-400-sudarshan-chakra-missile-shield-that-foiled-paks-escalatory-bid-2721572-2025-05-08",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S23",
+      "title": "Pak targeted 36 places with 300–400 'Turkish' drones: India on May 8 attack",
+      "url": "https://www.indiatoday.in/india/story/pakistan-india-may-8-attack-turkish-drone-used-400-drones-civilian-planes-radar-india-36-drones-operation-sindoor-2722309-2025-05-09",
+      "type": "news_government_claim",
+      "perspective": "印度媒体转述印方"
+    },
+    {
+      "id": "S24",
+      "title": "Pakistan military says it shot down 25 Israeli-made drones launched by India",
+      "url": "https://www.timesofisrael.com/pakistan-military-says-it-shot-down-25-israeli-made-drones-launched-by-india/",
+      "type": "news_government_claim",
+      "perspective": "Times of Israel 转述巴方"
+    },
+    {
+      "id": "S25",
+      "title": "How India and Pakistan pulled back from the brink with US-brokered ceasefire",
+      "url": "https://www.reuters.com/world/asia-pacific/how-india-pakistan-pulled-back-brink-with-us-brokered-ceasefire-2025-05-13/",
+      "type": "news",
+      "perspective": "Reuters"
+    },
+    {
+      "id": "S26",
+      "title": "Indian strikes on Pakistan damaged six airfields, Post analysis finds",
+      "url": "https://www.washingtonpost.com/world/2025/05/14/india-pakistan-strikes-conflict-damage/",
+      "type": "visual_investigation",
+      "perspective": "The Washington Post"
+    },
+    {
+      "id": "S27",
+      "title": "Pakistan never requested ceasefire: DG ISPR briefs nation",
+      "url": "https://tribune.com.pk/story/2545242/",
+      "type": "news_government_claim",
+      "perspective": "巴基斯坦媒体转述巴方军方"
+    },
+    {
+      "id": "S28",
+      "title": "India and Pakistan Talked Big, but Satellite Imagery Shows Limited Damage",
+      "url": "https://www.nytimes.com/interactive/2025/05/14/world/asia/india-pakistan-attack-damage-satellite-images.html",
+      "type": "visual_investigation",
+      "perspective": "The New York Times"
+    },
+    {
+      "id": "S29",
+      "title": "India-Pakistan live: ceasefire agreement (10 May 2025)",
+      "url": "https://www.aljazeera.com/news/liveblog/2025/5/10/india-pakistan-live-pakistan-airbases-targeted-as-blasts-rock-north-india",
+      "type": "news_live",
+      "perspective": "Al Jazeera"
+    },
+    {
+      "id": "S30",
+      "title": "Kashmir: Modi tells Trump India won't accept 'third-party mediation'",
+      "url": "https://www.bbc.com/news/articles/c89ew9wde3lo",
+      "type": "news",
+      "perspective": "BBC"
+    },
+    {
+      "id": "S31",
+      "title": "India-Pakistan ceasefire appears to hold after accusations of violations",
+      "url": "https://www.bbc.com/news/articles/cvg9d913v20o",
+      "type": "news",
+      "perspective": "BBC"
+    },
+    {
+      "id": "S32",
+      "title": "Number of personnel martyred in response to Indian aggression rises to 13: ISPR",
+      "url": "https://tribune.com.pk/story/2545851/toll-of-personnel-martyred-in-indian-aggression-rises-to-13-ispr",
+      "type": "news_government_claim",
+      "perspective": "巴基斯坦媒体转述巴方军方"
+    },
+    {
+      "id": "S33",
+      "title": "2025 Annual Report to Congress",
+      "url": "https://www.uscc.gov/sites/default/files/2025-11/2025_Annual_Report_to_Congress.pdf",
+      "type": "government_commission_report",
+      "perspective": "美国国会美中经济与安全审查委员会"
+    },
+    {
+      "id": "S34",
+      "title": "'I love you': IAF martyr Sergeant Surendra Moga's wife clutches his uniform as family bids final goodbye",
+      "url": "https://timesofindia.indiatimes.com/city/pune/i-love-you-iaf-martyr-sergeant-surendra-mogas-wife-clutches-his-uniform-as-family-bids-final-goodbye/articleshow/121095633.cms",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S35",
+      "title": "Pakistan downs five Indian fighter jets in retaliation for India's missile attack: security sources",
+      "url": "https://tribune.com.pk/story/2544343/indian-missile-strikes-hit-muzaffarabad-kotli-and-bahawalpur-amid-escalating-tensions",
+      "type": "news_government_claim",
+      "perspective": "巴基斯坦媒体援引巴方安全消息"
+    },
+    {
+      "id": "S36",
+      "title": "India strikes Pakistan over Kashmir tourist killings",
+      "url": "https://www.reuters.com/world/asia-pacific/multiple-loud-explosions-heard-pakistani-kashmir-reuters-witness-2025-05-06/",
+      "type": "news",
+      "perspective": "Reuters"
+    },
+    {
+      "id": "S37",
+      "title": "8 missiles targeted at Jammu intercepted, blackouts from Punjab to Rajasthan",
+      "url": "https://indianexpress.com/article/india/missiles-targeted-jammu-blackout-punjab-rajasthan-9991390/",
+      "type": "news",
+      "perspective": "印度媒体"
+    },
+    {
+      "id": "S38",
+      "title": "Five killed by Pakistani shelling in Jammu region: Reports",
+      "url": "https://www.aljazeera.com/news/liveblog/2025/5/10/india-pakistan-live-pakistan-airbases-targeted-as-blasts-rock-north-india?update=3699418",
+      "type": "news_live",
+      "perspective": "Al Jazeera"
+    }
+  ],
+  "facts": [
+    {
+      "id": "F01",
+      "claim": "2025 年 4 月 22 日帕哈尔加姆附近的袭击造成 26 名平民遇难，多数为游客；巴基斯坦否认与袭击有关。",
+      "status": "supported_casualties_attribution_contested",
+      "source_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "F02",
+      "claim": "印度宣布暂停《印度河水条约》等措施；巴方关闭领空、暂停贸易，称暂停条约是战争行为。",
+      "status": "supported",
+      "source_ids": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "F03",
+      "claim": "5 月 7 日 01:05–01:30（印度时间），印度打击巴基斯坦及巴控克什米尔的 9 处地点。",
+      "status": "supported_target_nature_contested",
+      "source_ids": [
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "notes": "印方称打击恐怖组织设施，巴方称打击平民区和清真寺，两说并列。"
+    },
+    {
+      "id": "F04",
+      "claim": "据印度媒体援引消息人士，阵风挂载 SCALP 和 HAMMER；陆军使用 M982 制导炮弹和巡飞弹。",
+      "status": "attributed",
+      "source_ids": [
+        "S08",
+        "S09"
+      ]
+    },
+    {
+      "id": "F05",
+      "claim": "空战参战飞机超过 114 架（印方 72 架、巴方 42 架）；双方均未越境，交战距离有时超过 100 公里。",
+      "status": "attributed",
+      "source_ids": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "F06",
+      "claim": "据一名巴方高级军官称，空战持续约 52 分钟。",
+      "status": "attributed",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "F07",
+      "claim": "巴方 J-10C 发射 PL-15，系该导弹首次实战使用；印度境内多处发现 PL-15 残骸。",
+      "status": "supported",
+      "source_ids": [
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "id": "F08",
+      "claim": "巴方空军把战果归于第 15 中队'眼镜蛇'（J-10C），该中队 20 架飞机中有 18 架参与拦截。",
+      "status": "attributed",
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "id": "F09",
+      "claim": "美国官员对路透社称高度确信 J-10 至少击落 2 架印度战机，其中 1 架被评估为阵风。",
+      "status": "attributed_anonymous",
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "id": "F10",
+      "claim": "《华盛顿邮报》识别出 3 处 5 月 7 日坠机点：巴廷达（阵风）、潘波尔（幻影 2000）、阿克努尔（可能为米格-29）；巴廷达坠机据报道致两名旁观者死亡。",
+      "status": "supported_media_identification",
+      "source_ids": [
+        "S15",
+        "S16"
+      ]
+    },
+    {
+      "id": "F11",
+      "claim": "巴方先称击落 5 架战机和 1 架苍鹭无人机，后称 6 架，又称其中 4 架是阵风。",
+      "status": "attributed",
+      "source_ids": [
+        "S17",
+        "S18"
+      ]
+    },
+    {
+      "id": "F12",
+      "claim": "印度空军 5 月 11 日称损失是战斗的一部分、飞行员均已回家；国防参谋长 5 月 31 日承认有战机损失，但否认 6 架之说。",
+      "status": "supported_statement",
+      "source_ids": [
+        "S19",
+        "S20"
+      ]
+    },
+    {
+      "id": "F13",
+      "claim": "法国空天军参谋长称看到 3 架飞机被击落的证据：阵风、幻影 2000、苏霍伊各 1 架。",
+      "status": "attributed",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "id": "F14",
+      "claim": "2025 年 8 月，印度空军参谋长称用 S-400 击落 5 架巴方战机和 1 架预警机；《空军月刊》称缺乏佐证，巴方否认。",
+      "status": "contested",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "F15",
+      "claim": "5 月 8 日印方称 S-400 首次实战拦截巴方无人机和导弹，称巴方动用 300–400 架土耳其产无人机；巴方否认，并称击落数十架以色列产哈洛普。",
+      "status": "competing_claims",
+      "source_ids": [
+        "S22",
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "id": "F16",
+      "claim": "5 月 10 日 02:09 努尔汗基地遭打击；卫星图显示多处基地受损，博拉里一架爱立眼预警机受损，巴方称已修复。",
+      "status": "supported_satellite_partly_attributed",
+      "source_ids": [
+        "S25",
+        "S26",
+        "S10"
+      ]
+    },
+    {
+      "id": "F17",
+      "claim": "巴方军方确认 5 月 10 日 6 名空军人员死亡，其中博拉里 5 人。",
+      "status": "supported",
+      "source_ids": [
+        "S26"
+      ]
+    },
+    {
+      "id": "F18",
+      "claim": "巴方'坚固之墙'行动称打击印方 26 处目标；印方承认四处基地有限损伤；《纽约时报》称卫星图未清楚显示巴方声称的大部分破坏。",
+      "status": "competing_claims_with_third_party",
+      "source_ids": [
+        "S27",
+        "S28"
+      ]
+    },
+    {
+      "id": "F19",
+      "claim": "停火于 5 月 10 日 17:00（印度时间）生效，先由特朗普在社交媒体宣布；印方称停火由两国军方直接谈成。",
+      "status": "supported",
+      "source_ids": [
+        "S29",
+        "S30"
+      ]
+    },
+    {
+      "id": "F20",
+      "claim": "据各自政府统计，印方 21 名平民、8 名军人和准军事人员死亡；巴方 40 名平民、13 名军人死亡。",
+      "status": "attributed_government_counts",
+      "source_ids": [
+        "S31",
+        "S32"
+      ]
+    },
+    {
+      "id": "F21",
+      "claim": "美国国会美中经济与安全审查委员会报告称巴方取得军事成功，这是 J-10、PL-15、HQ-9 首次实战使用。",
+      "status": "attributed",
+      "source_ids": [
+        "S33"
+      ]
+    },
+    {
+      "id": "F22",
+      "claim": "巴方空袭乌汉普尔空军基地后，一名印度空军士官阵亡。",
+      "status": "supported",
+      "source_ids": [
+        "S34",
+        "S28"
+      ]
+    },
+    {
+      "id": "F23",
+      "claim": "巴方称 5 月 7 日印方对穆扎法拉巴德萨伊德纳·比拉尔清真寺和科特利阿巴斯清真寺的打击造成 5 名平民死亡；印方称这些地点与恐怖组织有关。",
+      "status": "competing_claims",
+      "source_ids": [
+        "S35",
+        "S36"
+      ]
+    },
+    {
+      "id": "F24",
+      "claim": "5 月 8 日夜查谟传出多次爆炸，印方称拦截了 8 枚针对查谟的巴方导弹；5 月 10 日地方官员称拉焦里、蓬奇、查谟三地区至少 5 人死于巴方炮击。",
+      "status": "attributed",
+      "source_ids": [
+        "S37",
+        "S38"
+      ]
+    }
+  ],
+  "state": {
+    "faraz_count": {
+      "type": "int",
+      "default": 0,
+      "notes": "跟随法拉兹的次数"
+    },
+    "rohan_count": {
+      "type": "int",
+      "default": 0,
+      "notes": "跟随罗汉的次数"
+    }
+  },
+  "nodes": [
+    {
+      "id": "SC00",
+      "type": "opening",
+      "title": "序：四月",
+      "duration_seconds": 60,
+      "narration": "4 月 22 日，帕哈尔加姆附近的袭击造成 26 名平民遇难。印度指向巴基斯坦，巴基斯坦否认。两周后，两国之间的天空关闭了。",
+      "fact_refs": [
+        "F01",
+        "F02"
+      ],
+      "adaptation_labels": [
+        "historical_fact"
+      ],
+      "media": [
+        "title_cards",
+        "flight_board_cancelled"
+      ],
+      "equipment_refs": [],
+      "notes": "不重演袭击。",
+      "choices": [
+        {
+          "id": "C00A",
+          "label": "从法拉兹的那一夜开始",
+          "effects": {
+            "faraz_count": "+1"
+          },
+          "next": "SC01A"
+        },
+        {
+          "id": "C00B",
+          "label": "从罗汉的那一夜开始",
+          "effects": {
+            "rohan_count": "+1"
+          },
+          "next": "SC01B"
+        }
+      ]
+    },
+    {
+      "id": "SC01A",
+      "type": "chapter",
+      "title": "法拉兹：警戒室",
+      "perspective": "faraz",
+      "duration_seconds": 120,
+      "narration": "据巴方《黎明报》，第 15 中队'眼镜蛇'当晚出动了 20 架 J-10C 中的 18 架。",
+      "dialogue": [
+        {
+          "speaker": "faraz",
+          "line": "睡吧，我在天上。",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "controller",
+          "line": "利爪 2，向东爬升。东边的航迹还在增加。",
+          "language": "en",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "faraz",
+          "line": "这不像演习。",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F07",
+        "F08"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "alert_room_voice_message",
+        "j10c_scramble",
+        "hud_vector_east"
+      ],
+      "equipment_refs": [
+        "EQ-PK-02",
+        "EQ-PK-03",
+        "EQ-PK-05"
+      ],
+      "notes": "引导员位置不交代。",
+      "choices": [
+        {
+          "id": "C01A",
+          "label": "继续",
+          "next": "SC02"
+        }
+      ]
+    },
+    {
+      "id": "SC01B",
+      "type": "chapter",
+      "title": "罗汉：简报室",
+      "perspective": "rohan",
+      "duration_seconds": 120,
+      "narration": "据印度媒体援引消息人士，阵风当晚挂载了 SCALP 和 HAMMER。",
+      "dialogue": [
+        {
+          "speaker": "neel",
+          "line": "学长，回来请我吃那包糖。",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "briefing_officer",
+          "line": "不越过边境。打完就回。",
+          "language": "en",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "rohan",
+          "line": "不过线。打完就回。",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F04"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "briefing_room",
+        "neel_joke_walkout",
+        "rafale_scalp_hammer_loadout",
+        "hud_power_on"
+      ],
+      "equipment_refs": [
+        "EQ-IN-01",
+        "EQ-IN-06",
+        "EQ-IN-07"
+      ],
+      "choices": [
+        {
+          "id": "C01B",
+          "label": "继续",
+          "next": "SC02"
+        }
+      ]
+    },
+    {
+      "id": "SC02",
+      "type": "convergence",
+      "title": "01:05（分屏）",
+      "duration_seconds": 120,
+      "narration": "01:05 到 01:30，印度打击了 9 处地点。印方说那里是恐怖组织设施，巴方说那里是平民区和清真寺。",
+      "dialogue": [
+        {
+          "speaker": "controller",
+          "line": "所有单位，他们开火了。",
+          "language": "en",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue",
+        "contested"
+      ],
+      "media": [
+        "split_screen_strike_and_hud",
+        "target_map_9_sites"
+      ],
+      "equipment_refs": [
+        "EQ-IN-01",
+        "EQ-IN-06",
+        "EQ-IN-07",
+        "EQ-IN-11",
+        "EQ-IN-13",
+        "EQ-PK-05"
+      ],
+      "choices": [
+        {
+          "id": "C02A",
+          "label": "跟随法拉兹进入空战",
+          "effects": {
+            "faraz_count": "+1"
+          },
+          "next": "SC03A"
+        },
+        {
+          "id": "C02B",
+          "label": "跟随罗汉进入空战",
+          "effects": {
+            "rohan_count": "+1"
+          },
+          "next": "SC03B"
+        }
+      ]
+    },
+    {
+      "id": "SC03A",
+      "type": "chapter",
+      "title": "法拉兹：五十二分钟",
+      "perspective": "faraz",
+      "duration_seconds": 180,
+      "narration": "超过一百架飞机，没有一架越过边境。PL-15 远程导弹第一次在实战中发射。据巴方军官说，交战持续了大约五十二分钟。",
+      "dialogue": [
+        {
+          "speaker": "faraz",
+          "line": "利爪 2，导弹离架。目标航迹丢失。",
+          "language": "en",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "controller",
+          "line": "收到。无法确认。",
+          "language": "en",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "faraz",
+          "line": "航迹丢失，不等于击落。",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F05",
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "hud_target_assigned",
+        "pl15_launch_x2",
+        "track_fades"
+      ],
+      "equipment_refs": [
+        "EQ-PK-01",
+        "EQ-PK-02",
+        "EQ-PK-03",
+        "EQ-PK-05",
+        "EQ-IN-01",
+        "EQ-IN-02",
+        "EQ-IN-03",
+        "EQ-IN-04"
+      ],
+      "notes": "目标只以雷达航迹符号出现，不显示机型、不对应真实坠机；PL-15 射程细节待核读 S12。",
+      "choices": [
+        {
+          "id": "C03A",
+          "label": "天亮了",
+          "next": "SC04"
+        }
+      ]
+    },
+    {
+      "id": "SC03B",
+      "type": "chapter",
+      "title": "罗汉：五十二分钟",
+      "perspective": "rohan",
+      "duration_seconds": 180,
+      "narration": "那天凌晨，印度境内至少有三处地方落下了战机残骸。",
+      "dialogue": [
+        {
+          "speaker": "rohan",
+          "line": "游隼 4，报告位置。尼尔？尼尔！",
+          "language": "en",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F05",
+        "F07",
+        "F10"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "rwr_warning",
+        "flare_dispense",
+        "distant_ground_fire"
+      ],
+      "equipment_refs": [
+        "EQ-IN-01",
+        "EQ-IN-02",
+        "EQ-IN-03",
+        "EQ-IN-04",
+        "EQ-PK-02"
+      ],
+      "notes": "尼尔为虚构人物，失联不对应任何真实坠机点，也不暗示具体机型。",
+      "choices": [
+        {
+          "id": "C03B",
+          "label": "天亮了",
+          "next": "SC04"
+        }
+      ]
+    },
+    {
+      "id": "SC04",
+      "type": "convergence",
+      "title": "黎明与两夜",
+      "duration_seconds": 120,
+      "narration": "第二天起，天空里多了更小、更便宜的东西。印方说 S-400 第一次在实战中开火，巴方说击落了几十架以色列产无人机。双方都否认对方指控的袭击。",
+      "fact_refs": [
+        "F03",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F15",
+        "F23",
+        "F24"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "competing_claims"
+      ],
+      "media": [
+        "faraz_calls_sana",
+        "rohan_dials_neel_no_answer",
+        "rohan_calls_mother",
+        "claim_cards_tv",
+        "pl15_debris_phone_photo_redraw",
+        "drone_nights_montage",
+        "jammu_sky_lit"
+      ],
+      "equipment_refs": [
+        "EQ-IN-09",
+        "EQ-IN-10",
+        "EQ-IN-12",
+        "EQ-PK-02",
+        "EQ-PK-08"
+      ],
+      "choices": [
+        {
+          "id": "C04A",
+          "label": "5 月 10 日凌晨跟随法拉兹",
+          "effects": {
+            "faraz_count": "+1"
+          },
+          "next": "SC05A"
+        },
+        {
+          "id": "C04B",
+          "label": "5 月 10 日凌晨跟随罗汉",
+          "effects": {
+            "rohan_count": "+1"
+          },
+          "next": "SC05B"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "sana",
+          "line": "我没事。街那头的清真寺……被炸了。",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "rohan_mother",
+          "line": "吃饭了没有？",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        }
+      ]
+    },
+    {
+      "id": "SC05A",
+      "type": "chapter",
+      "title": "法拉兹：五月十日",
+      "perspective": "faraz",
+      "duration_seconds": 120,
+      "narration": "5 月 10 日凌晨，印度打击了巴方多处空军基地。博拉里的机库里，一架'爱立眼'受损，5 名空军人员死亡。",
+      "dialogue": [
+        {
+          "speaker": "faraz",
+          "line": "……博拉里？",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F16",
+        "F17"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue",
+        "historical_fact"
+      ],
+      "media": [
+        "cockpit_alert_canopy_open",
+        "comms_nur_khan_hit",
+        "bholari_hangar_breach",
+        "su30_brahmos_insert"
+      ],
+      "equipment_refs": [
+        "EQ-IN-02",
+        "EQ-IN-05",
+        "EQ-IN-06",
+        "EQ-IN-10",
+        "EQ-IN-13",
+        "EQ-PK-01",
+        "EQ-PK-06",
+        "EQ-PK-11"
+      ],
+      "choices": [
+        {
+          "id": "C05A",
+          "label": "继续",
+          "next": "SC06"
+        }
+      ]
+    },
+    {
+      "id": "SC05B",
+      "type": "chapter",
+      "title": "罗汉：五月十日",
+      "perspective": "rohan",
+      "duration_seconds": 120,
+      "narration": "巴方发起反击，称打击了 26 处军事目标。印方承认四处基地受到有限损伤；卫星图未能清楚显示巴方声称的大部分破坏。在查谟一带，炮击又造成了平民死亡。",
+      "dialogue": [
+        {
+          "speaker": "rohan",
+          "line": "他们也来了。",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        },
+        {
+          "speaker": "rohan_mother",
+          "line": "我在楼下邻居家，都好。",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "fact_refs": [
+        "F18",
+        "F22",
+        "F24"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue",
+        "competing_claims"
+      ],
+      "media": [
+        "base_sirens_bunker",
+        "air_defence_launches",
+        "busy_tone_mother",
+        "drone_debris_dawn",
+        "mother_sms"
+      ],
+      "equipment_refs": [
+        "EQ-IN-09",
+        "EQ-PK-04",
+        "EQ-PK-07",
+        "EQ-PK-09",
+        "EQ-PK-10"
+      ],
+      "choices": [
+        {
+          "id": "C05B",
+          "label": "继续",
+          "next": "SC06"
+        }
+      ]
+    },
+    {
+      "id": "SC06",
+      "type": "convergence",
+      "title": "17:00",
+      "duration_seconds": 60,
+      "narration": "停火在下午五点生效。两国平民的死亡人数，比任何一架飞机都更难写进标题。",
+      "fact_refs": [
+        "F19",
+        "F20"
+      ],
+      "adaptation_labels": [
+        "historical_fact",
+        "attributed_claim"
+      ],
+      "media": [
+        "clocks_17_00",
+        "split_sky_merge",
+        "casualty_cards_both_sides"
+      ],
+      "equipment_refs": [],
+      "choices": [
+        {
+          "id": "C06",
+          "label": "继续",
+          "next_by_condition": [
+            {
+              "if": "faraz_count > rohan_count",
+              "next": "SC07A"
+            },
+            {
+              "if": "rohan_count > faraz_count",
+              "next": "SC07B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC07A",
+      "type": "ending",
+      "title": "法拉兹结局",
+      "perspective": "faraz",
+      "duration_seconds": 90,
+      "narration": "6 月 6 日，巴基斯坦空军将击落战果归于第 15 中队'眼镜蛇'。",
+      "fact_refs": [
+        "F08",
+        "F23"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "squadron_applause_tv",
+        "mission_log_unconfirmed",
+        "muzaffarabad_mosque_with_sana",
+        "source_cards_epilogue"
+      ],
+      "equipment_refs": [
+        "EQ-PK-03"
+      ],
+      "epilogue": "EPILOGUE",
+      "shared_coda": "本作选择不改变历史结果。战果、伤亡数字以来源卡为准；空战画面为重建演示，不是档案影像。",
+      "ending": true,
+      "dialogue": [
+        {
+          "speaker": "sana",
+          "line": "那天晚上，你在天上看见什么了？",
+          "language": "ur",
+          "label": "fictional_dialogue"
+        }
+      ],
+      "notes": "任务记录写'发射 2 枚，结果：未确认'。"
+    },
+    {
+      "id": "SC07B",
+      "type": "ending",
+      "title": "罗汉结局",
+      "perspective": "rohan",
+      "duration_seconds": 90,
+      "narration": "5 月 11 日，印度空军称：损失是战斗的一部分，所有飞行员均已回家。",
+      "fact_refs": [
+        "F12"
+      ],
+      "adaptation_labels": [
+        "reconstruction",
+        "composite_character",
+        "fictional_dialogue"
+      ],
+      "media": [
+        "hospital_corridor",
+        "neel_in_cast",
+        "sweets_on_bedside",
+        "source_cards_epilogue"
+      ],
+      "equipment_refs": [],
+      "epilogue": "EPILOGUE",
+      "shared_coda": "本作选择不改变历史结果。战果、伤亡数字以来源卡为准；空战画面为重建演示，不是档案影像。",
+      "ending": true,
+      "dialogue": [
+        {
+          "speaker": "neel",
+          "line": "学长，糖呢？",
+          "language": "hi",
+          "label": "fictional_dialogue"
+        }
+      ]
+    }
+  ],
+  "validation_rules": [
+    "所有 fact_refs、source_ids、equipment_refs、epilogue fact_ref 必须指向已定义 ID（装备 ID 见 equipment_reference.md）。",
+    "所有节点从 SC00 可达；两个 ending 均可达。",
+    "next_by_condition 的条件对所有可能状态必须恰好命中一个分支（三次二选一，faraz_count 与 rohan_count 不会相等）。",
+    "adaptation_labels 含 reconstruction 的节点，画面必须常驻'重建演示'标签。",
+    "合成角色的对白不得陈述具体击落数字或把某次坠机归于某次发射。",
+    "家人角色（sana、rohan_mother）不得出现受伤或死亡情节，只经电话、短信出现。",
+    "F11、F14 只能出现在片尾来源卡并标明发布者，不得写成旁白陈述句。",
+    "SC06 必须同时呈现两国伤亡，并注明各自政府统计。"
+  ],
+  "epilogues": {
+    "EPILOGUE": {
+      "title": "片尾来源卡",
+      "cards": [
+        {
+          "date": "2025-05-07",
+          "speaker": "巴方军方",
+          "fact_ref": "F11"
+        },
+        {
+          "date": "2025-05-08",
+          "speaker": "匿名美国官员（路透社）",
+          "fact_ref": "F09"
+        },
+        {
+          "date": "2025-05-09",
+          "speaker": "《华盛顿邮报》",
+          "fact_ref": "F10"
+        },
+        {
+          "date": "2025-05-28",
+          "speaker": "巴方总理",
+          "fact_ref": "F11"
+        },
+        {
+          "date": "2025-05-31",
+          "speaker": "印度国防参谋长",
+          "fact_ref": "F12"
+        },
+        {
+          "date": "2025-07",
+          "speaker": "法国空天军参谋长",
+          "fact_ref": "F13"
+        },
+        {
+          "date": "2025-08",
+          "speaker": "印度空军参谋长",
+          "fact_ref": "F14"
+        },
+        {
+          "date": "2025-11-18",
+          "speaker": "美国国会美中经济与安全审查委员会",
+          "fact_ref": "F21"
+        }
+      ]
+    }
+  }
+}
