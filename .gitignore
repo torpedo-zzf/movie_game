@@ -1,0 +1,19 @@
+.DS_Store
+node_modules
+.venv-*/
+.hyperframes/
+# 渲染母版超过 GitHub 100 MB 单文件上限，只保留在本地
+*_master.mp4
+tools/audio/.venv*/
+tools/audio/models/
+.deploy-gh-pages/
+# 大文件只留本地：渲染帧与 .blend、TRELLIS 模型、下载素材、本地模型仓库、播放器高清片段
+production/mogadishu_blender_ab/renders/
+production/mogadishu_blender_ab/assets/gen3d/**/*.glb
+production/mogadishu_blender_ab/assets/polyhaven/
+production/mogadishu_pilot/branch/clips/*.mp4
+production/mogadishu_pilot/renders/mogadishu_branch_default_path.mp4
+tools/audio/index-tts/
+__pycache__/
+*.log
+*.blend1

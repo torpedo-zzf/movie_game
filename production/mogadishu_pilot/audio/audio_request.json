@@ -1,0 +1,44 @@
+{
+  "provider": "macos-say",
+  "voice": "Tingting",
+  "lang": "zh-CN",
+  "standard_variety": "普通话（中国大陆标准发音），不使用方言音色",
+  "delivery": "清晰、克制、纪实；自然停顿，不使用新闻播报腔",
+  "lines": [
+    {
+      "id": "scene-01",
+      "text": "一九九三年十月三日，摩加迪沙当地时间下午三点半，行动开始。",
+      "rate_wpm": 180
+    },
+    {
+      "id": "scene-02",
+      "text": "行动目标是抓捕两名重要助手。美国陆军记录，有二十四人被拘押。",
+      "rate_wpm": 180
+    },
+    {
+      "id": "scene-03",
+      "text": "第一架黑鹰在目标区外约三个街区坠落，行动随即转为救援。",
+      "rate_wpm": 180
+    },
+    {
+      "id": "scene-04",
+      "text": "第二处坠机点在南面，距离不到一英里。",
+      "rate_wpm": 180
+    },
+    {
+      "id": "scene-05",
+      "text": "十月四日凌晨一点五十五分，救援车队抵达第一处坠机点。",
+      "rate_wpm": 180
+    },
+    {
+      "id": "scene-06",
+      "text": "美军死亡十八人。联合国记录七十五人受伤；《华盛顿邮报》记录八十四人。",
+      "rate_wpm": 195
+    }
+  ],
+  "bgm": {
+    "mode": "generate",
+    "query": "historical documentary, restrained tension to cautious relief",
+    "prompt": "Understated historical documentary score, slow minor-key orchestral underscore, low warm cello and bass strings, subtle muted frame-drum pulse, restrained tremolo strings, gradual tension then cautious relief, no vocals, no shouting, no gunfire, no recognizable melody, no heroic anthem, around 72 BPM, spacious and low dynamic, designed as a quiet bed beneath Mandarin narration, ends calm but unresolved."
+  }
+}

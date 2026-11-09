@@ -1,0 +1,49 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mogadishu-player",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        ".claude/tools/range_server.py",
+        "8765",
+        "production/mogadishu_pilot"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "blender-ab-review",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        ".claude/tools/range_server.py",
+        "8766",
+        "production/mogadishu_blender_ab"
+      ],
+      "port": 8766
+    },
+    {
+      "name": "mogadishu-web",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        ".claude/tools/range_server.py",
+        "8767",
+        ".deploy-gh-pages"
+      ],
+      "port": 8767
+    },
+    {
+      "name": "share-deck",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        ".claude/tools/range_server.py",
+        "8768",
+        "docs/share_deck"
+      ],
+      "port": 8768
+    }
+  ]
+}

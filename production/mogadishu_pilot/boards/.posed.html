@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #d9dcd7;
+        --ink: #171a18;
+        --signal: #c9593d;
+        --rule: #929894;
+        --font-display: "Noto Sans JP", Arial, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--ground);
+        color: var(--ink);
+        font-family: var(--font-display);
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      .shot {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+        padding: 82px 112px 62px;
+        background: var(--ground);
+      }
+      .masthead {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 18px;
+        font-size: 28px;
+        letter-spacing: .02em;
+      }
+      .eyebrow { font-weight: 700; }
+      .folio { color: #555d58; font-weight: 500; }
+      .source {
+        position: absolute;
+        left: 112px;
+        right: 112px;
+        bottom: 48px;
+        border-top: 1px solid var(--rule);
+        padding-top: 14px;
+        color: #454c48;
+        font-size: 28px;
+        line-height: 1.3;
+      }
+      h1, h2, p { margin: 0; }
+      h1 { font-size: 84px; line-height: 1.08; font-weight: 700; letter-spacing: -.035em; }
+      h2 { font-size: 58px; line-height: 1.16; font-weight: 700; letter-spacing: -.025em; }
+      .lead { font-size: 42px; line-height: 1.35; font-weight: 500; }
+      .signal { color: var(--signal); }
+      .small { font-size: 30px; line-height: 1.4; }
+      .map-note { color: #454c48; font-size: 28px; }
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+      .map-panel {
+        position: relative;
+        height: 580px;
+        border-left: 2px solid var(--ink);
+        padding: 24px 0 0 42px;
+      }
+      .map-label {
+        position: absolute;
+        font-size: 29px;
+        line-height: 1.15;
+        font-weight: 700;
+      }
+      .map-point {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        border: 4px solid var(--ground);
+        border-radius: 50%;
+        background: var(--signal);
+        box-shadow: 0 0 0 2px var(--signal);
+      }
+      .divider { height: 2px; width: 100%; background: var(--ink); }
+      .wide-number { font-size: 208px; line-height: .9; letter-spacing: -.07em; font-weight: 700; }
+      .number { font-size: 148px; line-height: .95; letter-spacing: -.06em; font-weight: 700; }
+      .time-label { font-size: 30px; font-weight: 700; letter-spacing: .02em; }
+      .block-row { display: grid; grid-template-columns: 180px 180px 180px; gap: 20px; align-items: center; }
+      .block { height: 100px; border: 2px solid var(--ink); display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; }
+      .column { display: flex; flex-direction: column; }
+      .center-v { display: flex; flex-direction: column; justify-content: center; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-qbnw" id="root" data-composition-id="main" data-start="0" data-duration="60" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-b6m8" id="shot-01" data-composition-id="shot-01" data-composition-src="compositions/frames/01-frame.html" data-start="0" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div data-hf-id="hf-o06w" id="shot-02" data-composition-id="shot-02" data-composition-src="compositions/frames/02-frame.html" data-start="10" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div data-hf-id="hf-4j6s" id="shot-03" data-composition-id="shot-03" data-composition-src="compositions/frames/03-frame.html" data-start="20" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div data-hf-id="hf-5qv8" id="shot-04" data-composition-id="shot-04" data-composition-src="compositions/frames/04-frame.html" data-start="30" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div data-hf-id="hf-z53k" id="shot-05" data-composition-id="shot-05" data-composition-src="compositions/frames/05-frame.html" data-start="40" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div data-hf-id="hf-jd5s" id="shot-06" data-composition-id="shot-06" data-composition-src="compositions/frames/06-frame.html" data-start="50" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 60 });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<template>
+  <style>
+    html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:transparent;color:#f3e9d4;font-family:"Noto Sans JP",Arial,sans-serif;}
+    *{box-sizing:border-box;}
+    #shot-02{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none;}
+    .caption{position:absolute;left:112px;bottom:12px;max-width:1350px;text-shadow:0 2px 14px rgba(0,0,0,.35);}
+    .caption-title{margin:0;color:#f3e9d4;font-size:38px;line-height:1.04;font-weight:600;letter-spacing:.01em;}
+    .caption-sub{margin-top:4px;color:#c5c5bc;font-size:28px;line-height:1.05;letter-spacing:.02em;}
+    .caption-extra{margin:4px 0 0;color:#d8c9ac;font-size:26px;line-height:1.05;letter-spacing:.035em;white-space:nowrap;}
+  </style>
+  <section class="clip" id="shot-02" data-composition-id="shot-02" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+    <div class="caption" id="caption-02">
+      <h1 class="caption-title">抓捕目标</h1>
+      <p class="caption-sub">两名重要助手 · 陆军记录 24 人被拘押</p>
+      
+    </div>
+  </section>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const timeline = gsap.timeline({ paused: true });
+    timeline.fromTo("#caption-02", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.62, ease: "power3.out" }, 0.42);
+    timeline.to("#caption-02", { opacity: 0, y: -5, duration: 0.34, ease: "power2.in" }, 9.45);
+    timeline.to({}, { duration: 10 });
+    window.__timelines["shot-02"] = timeline;
+    timeline.seek(0);
+  </script>
+</template>

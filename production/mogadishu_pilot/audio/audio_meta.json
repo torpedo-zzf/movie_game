@@ -1,0 +1,66 @@
+{
+  "tts_provider": "macOS say (offline)",
+  "voice_id": "Tingting (zh_CN, Mainland Mandarin)",
+  "bgm": {
+    "path": "assets/bgm/track.wav",
+    "volume": 0.12,
+    "mode": "detached-seed-loop",
+    "duration_s": 60.0
+  },
+  "bgm_pending": false,
+  "bgm_provider": "musicgen",
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": "detached-seed-loop",
+  "bgm_target_duration_s": 60.0,
+  "bgm_seed_duration_s": 28,
+  "bgm_loop_count": 3,
+  "voices": [
+    {
+      "id": "scene-01",
+      "path": "assets/voice/scene-01.wav",
+      "duration_s": 6.818,
+      "rate_wpm": 180,
+      "words": []
+    },
+    {
+      "id": "scene-02",
+      "path": "assets/voice/scene-02.wav",
+      "duration_s": 6.771,
+      "rate_wpm": 180,
+      "words": []
+    },
+    {
+      "id": "scene-03",
+      "path": "assets/voice/scene-03.wav",
+      "duration_s": 6.344,
+      "rate_wpm": 180,
+      "words": []
+    },
+    {
+      "id": "scene-04",
+      "path": "assets/voice/scene-04.wav",
+      "duration_s": 3.964,
+      "rate_wpm": 180,
+      "words": []
+    },
+    {
+      "id": "scene-05",
+      "path": "assets/voice/scene-05.wav",
+      "duration_s": 5.864,
+      "rate_wpm": 180,
+      "words": []
+    },
+    {
+      "id": "scene-06",
+      "path": "assets/voice/scene-06.wav",
+      "duration_s": 6.809,
+      "rate_wpm": 195,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 36.57,
+  "voice_language": "zh-CN",
+  "voice_standard": "普通话（中国大陆标准发音）"
+}
